@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+// 홈뷰에서 보여줄 데이터들 : 모든 코인들의 거래량 증가량, 가격 증가량 -> 5분단위, 1시간단위 만 일단!
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            
+        }
     }
 }
 
@@ -18,3 +21,5 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
+
