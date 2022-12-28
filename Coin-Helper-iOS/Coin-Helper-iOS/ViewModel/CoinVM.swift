@@ -16,26 +16,22 @@ class CoinVM: ObservableObject {
     
     @Published var coins: [CoinData] = []
     
-    // 회원가입 완료 이벤트
-    var registrationSuccess = PassthroughSubject<(), Never>()
-    
-    // 로그인 완료 이벤트
-    var loginSuccess = PassthroughSubject<(), Never>()
-    
-    // 이메일 유효 이벤트
-    var emailSuccess = PassthroughSubject<(), Never>()
+    // 코인 Fetch 완료 이벤트
+    var fetchCoinSuccess = PassthroughSubject<(), Never>()
     
     /// 회원가입하기
-    func register(name: String, email: String, password: String) {
-        print("UserVM: register() called")
+    func coinRanking(unit: Int) {
+        print("CoinVM: register() called")
         
-        AuthApiService.register(name: name, email: email, password: password)
+        CoinApiService.fetchCoinInfo(unit: unit)
             .sink { (completion: Subscribers.Completion<AFError>) in
                 print("UserVM completion: \(completion)")
-            } receiveValue: { (receivedUser: LoginResponseData) in
-//                self.loggedInUser = receivedUser
-                self.registrationSuccess.send()
+            } receiveValue: { (coins: [CoinData]) in
+                self.coins = coins
+                self.fetchCoinSuccess.send()
             }.store(in: &subscription)
     }
     
 }
+
+

@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TabView(selection: $tabSelection) {
-                LoginView().tabItem {
+                HomeView().tabItem {
                     Image(systemName: "house.fill")
                 }.tag(1)
                

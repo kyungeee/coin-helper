@@ -31,6 +31,7 @@
 		066FB229295B01680068916F /* CoinVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FB228295B01680068916F /* CoinVM.swift */; };
 		066FB22B295B02850068916F /* CoinApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FB22A295B02850068916F /* CoinApiService.swift */; };
 		066FB22D295B03320068916F /* CoinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FB22C295B03320068916F /* CoinRouter.swift */; };
+		066FB22F295B106A0068916F /* CoinListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FB22E295B106A0068916F /* CoinListCellView.swift */; };
 		0693CD9F2940E06300A38E60 /* EmailCheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693CD9E2940E06300A38E60 /* EmailCheckResponse.swift */; };
 		0693CDA12940F4F600A38E60 /* IdCheckRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693CDA02940F4F600A38E60 /* IdCheckRouter.swift */; };
 		06AE8827292D100400A2FE32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE8826292D100400A2FE32 /* ProfileView.swift */; };
@@ -70,6 +71,7 @@
 		066FB228295B01680068916F /* CoinVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinVM.swift; sourceTree = "<group>"; };
 		066FB22A295B02850068916F /* CoinApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinApiService.swift; sourceTree = "<group>"; };
 		066FB22C295B03320068916F /* CoinRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRouter.swift; sourceTree = "<group>"; };
+		066FB22E295B106A0068916F /* CoinListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCellView.swift; sourceTree = "<group>"; };
 		0693CD9E2940E06300A38E60 /* EmailCheckResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckResponse.swift; sourceTree = "<group>"; };
 		0693CDA02940F4F600A38E60 /* IdCheckRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCheckRouter.swift; sourceTree = "<group>"; };
 		06AE8826292D100400A2FE32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -188,6 +190,15 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		066FB230295C319B0068916F /* CoinRateView */ = {
+			isa = PBXGroup;
+			children = (
+				065A8F592959AD3600196165 /* HomeView.swift */,
+				066FB22E295B106A0068916F /* CoinListCellView.swift */,
+			);
+			path = CoinRateView;
+			sourceTree = "<group>";
+		};
 		06AE882A292D1A8700A2FE32 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,10 +220,10 @@
 		06AE882D292D1B0F00A2FE32 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				066FB230295C319B0068916F /* CoinRateView */,
 				064B09532929096C00F2CCD8 /* ContentView.swift */,
 				065A8F582959AAB200196165 /* User */,
 				065A8F572959AA9A00196165 /* Login */,
-				065A8F592959AD3600196165 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -353,6 +364,7 @@
 				06058EEB29335D0000EC7B8F /* TokenResponse.swift in Sources */,
 				06CE82172933C7E800596C67 /* IsLogined.swift in Sources */,
 				064B09542929096C00F2CCD8 /* ContentView.swift in Sources */,
+				066FB22F295B106A0068916F /* CoinListCellView.swift in Sources */,
 				064B09522929096C00F2CCD8 /* Coin_Helper_iOSApp.swift in Sources */,
 				0693CDA12940F4F600A38E60 /* IdCheckRouter.swift in Sources */,
 				06058EE72933559E00EC7B8F /* OAuthCredential.swift in Sources */,

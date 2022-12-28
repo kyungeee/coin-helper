@@ -12,7 +12,7 @@ import Combine
 // 코인 관련 api 호출
 enum CoinApiService {
     
-    static func fetchCoinInfo() -> AnyPublisher<[CoinData], AFError> {
+    static func fetchCoinInfo(unit: Int) -> AnyPublisher<[CoinData], AFError> {
         print("UserApiService - fetchCoinInfo() called")
         let storedTokenData = UserDefaultManager.shared.getTokens()
         
@@ -23,7 +23,7 @@ enum CoinApiService {
         let authInterceptor = AuthenticationInterceptor(authenticator: authenticator, credential: credential)
         
         return ApiClient.shared.session
-            .request(CoinRouter.coin, interceptor: authInterceptor)
+            .request(CoinRouter.coin(unit: unit))
             .publishDecodable(type: [CoinData].self)
             .value()
             .map{ receivedValue in

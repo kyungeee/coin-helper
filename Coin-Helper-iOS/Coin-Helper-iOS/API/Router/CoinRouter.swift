@@ -10,7 +10,7 @@ import Alamofire
 
 enum CoinRouter: URLRequestConvertible {
     
-    case coin
+    case coin(unit: Int)
     
     var baseURL: URL {
         return URL(string: ApiClient.BASE_URL)!
@@ -18,8 +18,8 @@ enum CoinRouter: URLRequestConvertible {
     
     var endPoint: String {
         switch self {
-        case .coin :
-            return "coin/volume/ranking"
+        case let .coin(unit) :
+            return "coin/price/ranking/\(unit)"
         }
     }
     
