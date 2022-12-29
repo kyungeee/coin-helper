@@ -17,18 +17,32 @@ class CoinVM: ObservableObject {
     @Published var coins: [CoinData] = []
     
     // 코인 Fetch 완료 이벤트
-    var fetchCoinSuccess = PassthroughSubject<(), Never>()
+    var fetchVolumeRankingSuccess = PassthroughSubject<(), Never>()
+    var fetchPriceRankingSuccess = PassthroughSubject<(), Never>()
     
-    /// 회원가입하기
-    func coinRanking(unit: Int) {
+    // 거래량 증가률 순위 가져오기
+    func fetchVolumeRanking(unit: Int) {
         print("CoinVM: register() called")
         
-        CoinApiService.fetchCoinInfo(unit: unit)
+        CoinApiService.fetchVolumeRanking(unit: unit)
             .sink { (completion: Subscribers.Completion<AFError>) in
                 print("UserVM completion: \(completion)")
             } receiveValue: { (coins: [CoinData]) in
                 self.coins = coins
-                self.fetchCoinSuccess.send()
+                self.fetchVolumeRankingSuccess.send()
+            }.store(in: &subscription)
+    }
+    
+    // 코인 가격 증가률 순위 가져오기
+    func fetchPriceRanking(unit: Int) {
+        print("CoinVM: register() called")
+        
+        CoinApiService.fetchPriceRanking(unit: unit)
+            .sink { (completion: Subscribers.Completion<AFError>) in
+                print("UserVM completion: \(completion)")
+            } receiveValue: { (coins: [CoinData]) in
+                self.coins = coins
+                self.fetchPriceRankingSuccess.send()
             }.store(in: &subscription)
     }
     

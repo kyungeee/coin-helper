@@ -12,23 +12,30 @@ import Combine
 // 코인 관련 api 호출
 enum CoinApiService {
     
-    static func fetchCoinInfo(unit: Int) -> AnyPublisher<[CoinData], AFError> {
-        print("UserApiService - fetchCoinInfo() called")
-        let storedTokenData = UserDefaultManager.shared.getTokens()
-        
-        let credential = OAuthCredential(accessToken: storedTokenData.accessToken, refreshToken: "", expiration: Date(timeIntervalSinceNow: 30000))
-        
-        // Create the interceptor
-        let authenticator = OAuthAuthenticator()
-        let authInterceptor = AuthenticationInterceptor(authenticator: authenticator, credential: credential)
-        
+    static func fetchVolumeRanking(unit: Int) -> AnyPublisher<[CoinData], AFError> {
+        print("UserApiService - fetchVolumeRanking() called")
+
         return ApiClient.shared.session
-            .request(CoinRouter.coin(unit: unit))
+            .request(CoinRouter.volume(unit: unit))
             .publishDecodable(type: [CoinData].self)
             .value()
             .map{ receivedValue in
                 return receivedValue
             }.eraseToAnyPublisher()
     }
+    
+    static func fetchPriceRanking(unit: Int) -> AnyPublisher<[CoinData], AFError> {
+        print("UserApiService - fetchPriceRanking() called")
+        
+        return ApiClient.shared.session
+            .request(CoinRouter.price(unit: unit))
+            .publishDecodable(type: [CoinData].self)
+            .value()
+            .map{ receivedValue in
+                return receivedValue
+            }.eraseToAnyPublisher()
+    }
+    
+    
 }
 

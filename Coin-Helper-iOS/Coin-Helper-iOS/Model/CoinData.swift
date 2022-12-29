@@ -57,6 +57,8 @@ struct CoinData: Codable, Identifiable {
 
         return String(format: "%.2f", roundedRate)
     }
+    
+    
    
 }
 
