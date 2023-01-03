@@ -21,31 +21,21 @@ struct VolumeListView: View {
     @State private var oneHour: SelectItem = .oneHour
     
     var body: some View {
-        VStack {
-            Picker("\(unit)", selection: $unit) {
-                Text("5minute")
-                    .tag(SelectItem.fiveMinute)
-                Text("1hour")
-                    .tag(SelectItem.oneHour)
-            }
-            .pickerStyle(.segmented)
-            .onChange(of: unit, perform: { newValue in
-//                coinVM.coinRanking(unit: unit)
-                print("1시간 데이터 가져오기 ")
-            })
-            
-            List {
-                Section(header: Text("")) {
+        VStack{
+            ScrollView {
+                VStack {
                     ForEach(coinVM.coins, id: \.id) { coin in
                         VolumeListCellView(coin: coin)
+                            .padding([.leading, .trailing],10)
+                            .padding([.top, .bottom], 2)
+                        
                     }
                 }
             }
-            .listStyle(.inset)
-            .onAppear{
+            .onAppear {
                 coinVM.fetchVolumeRanking(unit: unit)
             }
-            
+            .background(Color("BackgroundColor"))
         }
     }
 }

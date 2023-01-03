@@ -34,11 +34,18 @@
 		066FB22D295B03320068916F /* CoinRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066FB22C295B03320068916F /* CoinRouter.swift */; };
 		0693CD9F2940E06300A38E60 /* EmailCheckResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693CD9E2940E06300A38E60 /* EmailCheckResponse.swift */; };
 		0693CDA12940F4F600A38E60 /* IdCheckRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693CDA02940F4F600A38E60 /* IdCheckRouter.swift */; };
+		069E3563296414360056F85F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E3562296414350056F85F /* Constants.swift */; };
+		069E35652964144B0056F85F /* Ex+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E35642964144B0056F85F /* Ex+Date.swift */; };
+		069E3567296414540056F85F /* Ex+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E3566296414540056F85F /* Ex+View.swift */; };
+		069E356D296416B80056F85F /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E356C296416B80056F85F /* TitleView.swift */; };
+		069E356F29641AE90056F85F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E356E29641AE90056F85F /* TestView.swift */; };
+		069E3572296464730056F85F /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E3571296464720056F85F /* Modifiers.swift */; };
+		069E357829646A6A0056F85F /* CoinListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E357729646A6A0056F85F /* CoinListCellView.swift */; };
+		069E357B29646B3D0056F85F /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 069E357A29646B3D0056F85F /* URLImage */; };
 		06A56E52295C6F3F00CD431B /* PriceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A56E51295C6F3F00CD431B /* PriceListView.swift */; };
 		06A56E54295C6F4E00CD431B /* VolumeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A56E53295C6F4E00CD431B /* VolumeListView.swift */; };
 		06A56E56295C767A00CD431B /* PriceListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A56E55295C767A00CD431B /* PriceListCellView.swift */; };
 		06A56E58295C768500CD431B /* VolumeListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A56E57295C768500CD431B /* VolumeListCellView.swift */; };
-		06A56E5A295C7A1000CD431B /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A56E59295C7A1000CD431B /* NavigationBarView.swift */; };
 		06AE8827292D100400A2FE32 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE8826292D100400A2FE32 /* ProfileView.swift */; };
 		06AE8829292D135D00A2FE32 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE8828292D135C00A2FE32 /* RegisterView.swift */; };
 		06AE882C292D1A9400A2FE32 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE882B292D1A9400A2FE32 /* UserData.swift */; };
@@ -79,11 +86,17 @@
 		066FB22C295B03320068916F /* CoinRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRouter.swift; sourceTree = "<group>"; };
 		0693CD9E2940E06300A38E60 /* EmailCheckResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCheckResponse.swift; sourceTree = "<group>"; };
 		0693CDA02940F4F600A38E60 /* IdCheckRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdCheckRouter.swift; sourceTree = "<group>"; };
+		069E3562296414350056F85F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		069E35642964144B0056F85F /* Ex+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+Date.swift"; sourceTree = "<group>"; };
+		069E3566296414540056F85F /* Ex+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+View.swift"; sourceTree = "<group>"; };
+		069E356C296416B80056F85F /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		069E356E29641AE90056F85F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		069E3571296464720056F85F /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		069E357729646A6A0056F85F /* CoinListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCellView.swift; sourceTree = "<group>"; };
 		06A56E51295C6F3F00CD431B /* PriceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListView.swift; sourceTree = "<group>"; };
 		06A56E53295C6F4E00CD431B /* VolumeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeListView.swift; sourceTree = "<group>"; };
 		06A56E55295C767A00CD431B /* PriceListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceListCellView.swift; sourceTree = "<group>"; };
 		06A56E57295C768500CD431B /* VolumeListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeListCellView.swift; sourceTree = "<group>"; };
-		06A56E59295C7A1000CD431B /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		06AE8826292D100400A2FE32 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		06AE8828292D135C00A2FE32 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		06AE882B292D1A9400A2FE32 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -100,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069E357B29646B3D0056F85F /* URLImage in Frameworks */,
 				06AE8831292D21B300A2FE32 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,11 +178,8 @@
 			children = (
 				06AE882E292D1E6F00A2FE32 /* Info.plist */,
 				064B09512929096C00F2CCD8 /* Coin_Helper_iOSApp.swift */,
-				06058EDC2933479F00EC7B8F /* Manager */,
-				06AE882D292D1B0F00A2FE32 /* View */,
-				06058ED92933327900EC7B8F /* ViewModel */,
-				06AE882A292D1A8700A2FE32 /* Model */,
-				06AE8832292DD61700A2FE32 /* API */,
+				069E3560296412C50056F85F /* Configuration */,
+				069E3561296412D20056F85F /* Sources */,
 				064B09552929096F00F2CCD8 /* Assets.xcassets */,
 				064B09572929096F00F2CCD8 /* Preview Content */,
 			);
@@ -204,14 +215,63 @@
 			isa = PBXGroup;
 			children = (
 				065A8F592959AD3600196165 /* HomeView.swift */,
+				069E356C296416B80056F85F /* TitleView.swift */,
+				069E356E29641AE90056F85F /* TestView.swift */,
 				06026250295D63B600730394 /* CategoryView.swift */,
-				06A56E59295C7A1000CD431B /* NavigationBarView.swift */,
 				06A56E51295C6F3F00CD431B /* PriceListView.swift */,
 				06A56E53295C6F4E00CD431B /* VolumeListView.swift */,
 				06A56E55295C767A00CD431B /* PriceListCellView.swift */,
 				06A56E57295C768500CD431B /* VolumeListCellView.swift */,
+				069E357729646A6A0056F85F /* CoinListCellView.swift */,
 			);
 			path = CoinRateView;
+			sourceTree = "<group>";
+		};
+		069E3560296412C50056F85F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				069E35692964147B0056F85F /* Extensions */,
+				069E3568296414600056F85F /* Constants */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		069E3561296412D20056F85F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				069E35702964644A0056F85F /* Modifiers */,
+				06058ED92933327900EC7B8F /* ViewModel */,
+				06AE882A292D1A8700A2FE32 /* Model */,
+				06AE882D292D1B0F00A2FE32 /* View */,
+				06AE8832292DD61700A2FE32 /* API */,
+				06058EDC2933479F00EC7B8F /* Manager */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		069E3568296414600056F85F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				069E3562296414350056F85F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		069E35692964147B0056F85F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				069E3566296414540056F85F /* Ex+View.swift */,
+				069E35642964144B0056F85F /* Ex+Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		069E35702964644A0056F85F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				069E3571296464720056F85F /* Modifiers.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		06AE882A292D1A8700A2FE32 /* Model */ = {
@@ -235,8 +295,8 @@
 		06AE882D292D1B0F00A2FE32 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				066FB230295C319B0068916F /* CoinRateView */,
 				064B09532929096C00F2CCD8 /* ContentView.swift */,
+				066FB230295C319B0068916F /* CoinRateView */,
 				065A8F582959AAB200196165 /* User */,
 				065A8F572959AA9A00196165 /* Login */,
 			);
@@ -293,6 +353,7 @@
 			name = "Coin-Helper-iOS";
 			packageProductDependencies = (
 				06AE8830292D21B300A2FE32 /* Alamofire */,
+				069E357A29646B3D0056F85F /* URLImage */,
 			);
 			productName = "Coin-Helper-iOS";
 			productReference = 064B094E2929096C00F2CCD8 /* Coin-Helper-iOS.app */;
@@ -324,6 +385,7 @@
 			mainGroup = 064B09452929096C00F2CCD8;
 			packageReferences = (
 				06AE882F292D21B300A2FE32 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				069E357929646B3D0056F85F /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = 064B094F2929096C00F2CCD8 /* Products */;
 			projectDirPath = "";
@@ -363,24 +425,30 @@
 				06AE882C292D1A9400A2FE32 /* UserData.swift in Sources */,
 				066FB229295B01680068916F /* CoinVM.swift in Sources */,
 				06058ED42931086E00EC7B8F /* AuthApiService.swift in Sources */,
+				069E3572296464730056F85F /* Modifiers.swift in Sources */,
 				06058ED12930FC0D00EC7B8F /* AuthRouter.swift in Sources */,
 				06AE8839292DDF7300A2FE32 /* BaseInterceptor.swift in Sources */,
 				06058ECF2930F93500EC7B8F /* ApiLogger.swift in Sources */,
 				06058EDE293347AC00EC7B8F /* UserDefaultManager.swift in Sources */,
 				06058EE2293353B100EC7B8F /* UserApiService.swift in Sources */,
+				069E356D296416B80056F85F /* TitleView.swift in Sources */,
 				06058EE42933543E00EC7B8F /* UserInfoResponse.swift in Sources */,
 				064B09602929098500F2CCD8 /* LoginView.swift in Sources */,
 				06058EE02933520000EC7B8F /* UserRouter.swift in Sources */,
+				069E3563296414360056F85F /* Constants.swift in Sources */,
 				06AE8829292D135D00A2FE32 /* RegisterView.swift in Sources */,
+				069E35652964144B0056F85F /* Ex+Date.swift in Sources */,
 				066FB22D295B03320068916F /* CoinRouter.swift in Sources */,
+				069E3567296414540056F85F /* Ex+View.swift in Sources */,
 				06EDE77A2938FBBB000503B1 /* TestTokenData.swift in Sources */,
 				066FB227295B00240068916F /* CoinData.swift in Sources */,
 				06026251295D63B600730394 /* CategoryView.swift in Sources */,
 				06A56E56295C767A00CD431B /* PriceListCellView.swift in Sources */,
 				0693CD9F2940E06300A38E60 /* EmailCheckResponse.swift in Sources */,
 				06058EEB29335D0000EC7B8F /* TokenResponse.swift in Sources */,
+				069E356F29641AE90056F85F /* TestView.swift in Sources */,
+				069E357829646A6A0056F85F /* CoinListCellView.swift in Sources */,
 				06CE82172933C7E800596C67 /* IsLogined.swift in Sources */,
-				06A56E5A295C7A1000CD431B /* NavigationBarView.swift in Sources */,
 				064B09542929096C00F2CCD8 /* ContentView.swift in Sources */,
 				064B09522929096C00F2CCD8 /* Coin_Helper_iOSApp.swift in Sources */,
 				06A56E58295C768500CD431B /* VolumeListCellView.swift in Sources */,
@@ -591,6 +659,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		069E357929646B3D0056F85F /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		06AE882F292D21B300A2FE32 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -602,6 +678,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		069E357A29646B3D0056F85F /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 069E357929646B3D0056F85F /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
 		06AE8830292D21B300A2FE32 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 06AE882F292D21B300A2FE32 /* XCRemoteSwiftPackageReference "Alamofire" */;

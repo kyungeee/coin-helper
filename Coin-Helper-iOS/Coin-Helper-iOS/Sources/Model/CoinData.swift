@@ -19,6 +19,22 @@ struct CoinData: Codable, Identifiable {
     var nowVolume: Double // 현재거래량
     var beforeVolume: Double // 전 거래량
     
+    var nowVolumeToString: String {
+        var volumeToString = String(nowVolume)
+        if nowVolume == floor(nowVolume) {
+            for _ in 0..<volumeToString.count {
+                if volumeToString.last == "." {
+                    volumeToString.removeLast()
+                    break
+                }
+                else {
+                    volumeToString.removeLast()
+                }
+            }
+        }
+        return volumeToString
+    }
+        
     var nowPriceToString : String {
         var priceToString = String(nowPrice)
         if nowPrice == floor(nowPrice) {
@@ -40,8 +56,13 @@ struct CoinData: Codable, Identifiable {
                 }
             }
         }
-        
+
         return priceToString
+    }
+    
+    var roundedNowVolume: String {
+        let roundedVolume = round(nowVolume * 1000) / 1000
+        return String(format: "%.1f", roundedVolume)
     }
     
     var priceRate: String {

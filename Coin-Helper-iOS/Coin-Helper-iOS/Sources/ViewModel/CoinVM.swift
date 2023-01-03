@@ -45,7 +45,6 @@ class CoinVM: ObservableObject {
                 self.fetchPriceRankingSuccess.send()
             }.store(in: &subscription)
     }
-    
 }
 
 
